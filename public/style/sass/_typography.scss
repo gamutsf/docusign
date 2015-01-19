@@ -25,8 +25,8 @@ body {
   font-family: FontAwesome;
 }
 
+// Finance Typography //
 body.finance {
-
   h1, h2, h3 {
     @include finance-sans;
   }
@@ -85,48 +85,49 @@ body.finance {
     font-size: 18px;
     text-align: center;
   }
-
 }
 
+// Health Typography //
 body.health {
-
-  h1, h2, h3 {
-    @include finance-sans;
+  h1, h2, h3, h4 {
+    @include health-sans;
   }
 
   a {
-    @include finance-sans;
+    @include health-sans;
   }
 
   a.navbar-brand {
-    @include finance-serif;
+    @include health-sans;
     font-size: 30px;
     color: $white;
     margin-top: 30px;
     display: block;
     font-weight: 700;
+    margin-right: 80px;
     span {
-      font-style: italic;
-      color: $navy;
+      color: $darkGreen;
     }
   }
 
   a.btn {
-    background-color: $gold;
+    background-color: $blue;
     border: none;
     color: $white;
     padding: 15px 20px;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+    @include box-shadow (0px 3px 0px 0px rgba(89, 136, 153, 1));
     &:hover {
-      background-color: darken($gold, 5%);
+      background-color: darken($blue, 5%);
+      @include box-shadow (0px 3px 0px 0px rgba(51, 77, 87, 1));
     }
   }
 
   p {
     color: $medGray;
-    @include finance-sans;
+    @include health-sans;
     font-weight: 400;
     font-size: 12px;
   }
@@ -145,9 +146,7 @@ body.health {
 
   h4 {
     color: $darkGray;
-    font-size: 18px;
-    text-align: center;
+    font-size: 62px;
+    text-align: left;
   }
-
-
 }

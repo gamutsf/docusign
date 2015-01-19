@@ -16,26 +16,30 @@ body.health {
       margin-top: 30px;
       li {
         a {
-          color: $white;
+          color: $darkGreen;
           font-size: 18px;
           @include health-sans;
           font-weight: 700;
-          text-transform: uppercase;
+          text-transform: none;
           &:hover {
             background: none;
           }
         }
         &.open {
           a {
-            background: none;
+            background: $white;
+            border-radius: 5px;
+            padding-bottom: 39px;
           }
         }
       }
       // Dropdown Mega Menu //
       ul.dropdown-menu {
-        background: $darkGray;
+        background: $white;
         padding: 25px;
-        margin: 19px 0 0 0;
+        margin: -5px 0 0 0;
+        border: none;
+        @include box-shadow (none);
         h3 {
           font-size: 22px;
           color: $white;
@@ -54,14 +58,14 @@ body.health {
               a {
                 text-transform: none;
                 font-size: 18px;
-                color: $gold;
+                color: $blue;
               }
             }
           }
         }
         .soft-action {
           a.btn {
-            background-color: $gold;
+            background-color: $blue;
             text-transform: none;
           }
           p {
@@ -81,42 +85,20 @@ body.health {
     height: 720px;
     margin: 0;
     .callout {
-      max-width: 370px;
+      max-width: 600px;
       height: auto;
       border-radius: 5px;
-      background: rgba(255, 255, 255, 0.8);
       position: absolute;
       z-index: 10;
       margin-top: 100px;
       padding: 20px 50px;
       margin-left: 1px;
-      form {
-        .remember {
-           &:before {
-            content: '\f00c';
-            @include fa;
-            font-size: 11px;
-            color: $gray;
-            display: inline-block;
-            position: relative;
-            top: -10px;
-          }
-          &:after {
-            content: 'Remember';
-            font-size: 11px;
-            color: $gray;
-            display: inline-block;
-            position: relative;
-            top: -10px;
-          }
-          .fa {
-            font-size: 40px;
-          }
-        }
-        button[type="submit"] {
-          float: right;
-          background-color: $gray;
-          color: $white;
+      a.huge-btn {
+        background-color: $green;
+        @include box-shadow (0px 3px 0px 0px rgba(88, 140, 126, 1));
+        &:hover {
+          background-color: darken($green, 5%);
+          @include box-shadow (0px 3px 0px 0px rgba(57, 88, 80, 1));
         }
       }
     }
@@ -130,13 +112,17 @@ body.health {
       border-radius: 5px;
       margin-bottom: 50px;
       .fa {
-        color: $teal;
+        color: $blue;
         font-size: 60px;
         padding: 20px;
       }
       a.btn {
         margin-top: 25px;
         padding: 15px 40px;
+        &:hover {
+          background-color: darken($blue, 10%);
+          @include box-shadow (0px 3px 0px 0px rgba(51, 77, 87, 1));
+        }
       }
     }
     .columns {
@@ -147,23 +133,19 @@ body.health {
           padding: 20px;
           background-color: lighten($lightGray, 3%);
           text-align: center;
-          .fa {
-            font-size: 40px;
-            color: $gold;
-          }
           p {
             font-size: 14px;
             line-height: 24px;
-
             margin: 20px 0;
+            color: $black;
           }
           a.btn {
-            background-color: $teal;
+            background-color: $blue;
             font-size: 16px;
             text-transform: none;
             padding: 15px 40px;
             &:hover {
-              background-color: darken($teal, 10%);
+              background-color: darken($blue, 10%);
             }
           }
         }
@@ -172,7 +154,7 @@ body.health {
   }
 
   footer {
-    background-color: $navy;
+    background-color: $brown;
     color: $white;
     .navbar-brand {
       width: 100%;
@@ -208,7 +190,7 @@ body.health {
       }
     }
     .sub-footer {
-      background-color: darken($navy, 3%);
+      background-color: darken($brown, 5%);
       .copyright {
         text-align: left;
         p {
