@@ -177,6 +177,61 @@ body.finance {
         }
       }
     }
+
+    .formz-vertical {
+      .form-group {
+        margin-top: 20px;
+        label {
+          float: left;
+          width: 100%;
+        }
+      }
+      .btn {
+        background-color: $teal;
+        font-size: 12px;
+        padding: 15px;
+        border-radius: 0;
+        text-transform: none;
+      }
+      button[type="submit"] {
+        color: $white;
+        padding: 10px 80px;
+        font-size: 14px;
+        margin-top: 20px;
+        &.pull-right {
+          margin-right: 295px;
+        }
+      }
+    }
+
+    .formz-horizontal {
+      .form-group {
+        margin-top: 20px;
+        label {
+          float: left;
+          width: 100%;
+        }
+      }
+      .btn {
+        background-color: $teal;
+        font-size: 12px;
+        padding: 15px;
+        border-radius: 0;
+        text-transform: none;
+      }
+      input {
+        width: 300px;
+      }
+      button[type="submit"] {
+        color: $white;
+        padding: 10px 80px;
+        font-size: 14px;
+        margin-top: 20px;
+        &.pull-right {
+          margin-right: 105px;
+        }
+      }
+    }
   }
 
   footer {
