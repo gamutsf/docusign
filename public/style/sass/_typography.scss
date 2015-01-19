@@ -27,6 +27,32 @@ body.finance {
     @include sans;
   }
 
+  a.navbar-brand {
+    @include serif;
+    font-size: 30px;
+    color: $white;
+    margin-top: 30px;
+    display: block;
+    font-weight: 700;
+    span {
+      font-style: italic;
+      color: $navy;
+    }
+  }
+
+  a.btn {
+    background-color: $gold;
+    border: none;
+    color: $white;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover {
+      background-color: darken($gold, 5%);
+    }
+  }
+
   p {
     color: $medGray;
     @include sans;

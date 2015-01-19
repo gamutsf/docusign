@@ -4,17 +4,6 @@ body.finance {
     width: 100%;
     height: 100px;
     background: url('../img/finance/topbg.png');
-    .navbar-brand {
-      @include serif;
-      font-size: 30px;
-      color: $white;
-      margin-top: 30px;
-      display: block;
-      span {
-        font-style: italic;
-        color: $navy;
-      }
-    }
 
     ul.navbar-nav {
       margin-top: 30px;
@@ -38,12 +27,41 @@ body.finance {
       // Dropdown Mega Menu //
       ul.dropdown-menu {
         background: $darkGray;
-        margin-top: 19px;
+        padding: 25px;
+        margin: 19px 0 0 0;
         h3 {
+          font-size: 22px;
           color: $white;
         }
         p {
-          color: $white
+          color: $white;
+        }
+        .links {
+          border-right: 1px solid darken($gray, 15%);
+          ul {
+            margin: 0;
+            padding: 0;
+            li {
+              list-style: none;
+              line-height: 3em;
+              a {
+                text-transform: none;
+                font-size: 18px;
+                color: $gold;
+              }
+            }
+          }
+        }
+        .soft-action {
+          a.btn {
+            background-color: $gold;
+            text-transform: none;
+          }
+          p {
+            margin: 20px 0;
+            font-size: 15px;
+            line-height: 25px;
+          }
         }
       }
     }
@@ -55,6 +73,8 @@ body.finance {
     width: 100%;
     height: 480px;
     margin: 0;
+    .login-window {
+    }
   }
 
   section#content {
@@ -69,8 +89,8 @@ body.finance {
         padding: 20px;
       }
       a.btn {
-        background-color: $gold;
-        color: $white;
+        margin-top: 25px;
+        padding: 15px 40px;
       }
     }
     .columns {
@@ -88,6 +108,17 @@ body.finance {
           p {
             font-size: 14px;
             line-height: 24px;
+
+            margin: 20px 0;
+          }
+          a.btn {
+            background-color: $teal;
+            font-size: 16px;
+            text-transform: none;
+            padding: 15px 40px;
+            &:hover {
+              background-color: darken($teal, 10%);
+            }
           }
         }
       }
