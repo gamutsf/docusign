@@ -135,17 +135,34 @@ body.finance {
     color: $white;
     .navbar-brand {
       width: 100%;
+      span {
+        color: $white;
+      }
     }
     h2, p, a {
       color: $white;
     }
-    ul.links-list {
-      margin: 0;
-      padding: 0;
-      li {
-        list-style: none;
-        a {
-          color: $lightGray;
+    .contact {
+      margin: 70px 0;
+      span {
+        font-style: italic;
+        font-size: 20px;
+        margin-left: 10px;
+      }
+    }
+    .footer-links {
+      h2 {
+        margin-top: 50px;
+      }
+      ul.list {
+        margin: 20px 0 20px 0;
+        padding: 0;
+        li {
+          list-style: none;
+          line-height: 2em;
+          a {
+            color: $lightGray;
+          }
         }
       }
     }
@@ -153,14 +170,22 @@ body.finance {
       background-color: darken($navy, 3%);
       .copyright {
         text-align: left;
+        p {
+          margin-top: 17px;
+        }
       }
       .social {
          ul {
           margin: 0;
           padding: 0;
           float: right;
+          margin-top: 10px;
           li {
             list-style: none;
+            a {
+              font-size: 22px;
+              margin-left: 20px;
+            }
           }
         }
       }
