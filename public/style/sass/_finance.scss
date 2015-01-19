@@ -3,10 +3,23 @@ body.finance {
   header {
     width: 100%;
     height: 100px;
-    background: url('../img/topbg.png');
+    background: url('../img/finance/topbg.png');
     .navbar-brand {
 
     }
+  }
+
+  section#masthead {
+    background: url('../img/finance/masthead.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 480px;
+    margin: 0;
+  }
+
+  section#content {
+    width: 100%;
+    height: auto;
   }
 
 }
