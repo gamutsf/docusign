@@ -1,0 +1,236 @@
+body.health {
+  background-color: $lightGray;
+  header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(136, 200, 165, 0.8);
+
+    .navbar-mini {
+      a {
+        color: $white;
+        font-weight: 600;
+      }
+    }
+
+    ul.navbar-nav {
+      margin-top: 30px;
+      li {
+        a {
+          color: $white;
+          font-size: 18px;
+          @include health-sans;
+          font-weight: 700;
+          text-transform: uppercase;
+          &:hover {
+            background: none;
+          }
+        }
+        &.open {
+          a {
+            background: none;
+          }
+        }
+      }
+      // Dropdown Mega Menu //
+      ul.dropdown-menu {
+        background: $darkGray;
+        padding: 25px;
+        margin: 19px 0 0 0;
+        h3 {
+          font-size: 22px;
+          color: $white;
+        }
+        p {
+          color: $white;
+        }
+        .links {
+          border-right: 1px solid darken($gray, 15%);
+          ul {
+            margin: 0;
+            padding: 0;
+            li {
+              list-style: none;
+              line-height: 3em;
+              a {
+                text-transform: none;
+                font-size: 18px;
+                color: $gold;
+              }
+            }
+          }
+        }
+        .soft-action {
+          a.btn {
+            background-color: $gold;
+            text-transform: none;
+          }
+          p {
+            margin: 20px 0;
+            font-size: 15px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  section#masthead {
+    background: url('../img/health/health-masthead.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 720px;
+    margin: 0;
+    .callout {
+      max-width: 370px;
+      height: auto;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      z-index: 10;
+      margin-top: 100px;
+      padding: 20px 50px;
+      margin-left: 1px;
+      form {
+        .remember {
+           &:before {
+            content: '\f00c';
+            @include fa;
+            font-size: 11px;
+            color: $gray;
+            display: inline-block;
+            position: relative;
+            top: -10px;
+          }
+          &:after {
+            content: 'Remember';
+            font-size: 11px;
+            color: $gray;
+            display: inline-block;
+            position: relative;
+            top: -10px;
+          }
+          .fa {
+            font-size: 40px;
+          }
+        }
+        button[type="submit"] {
+          float: right;
+          background-color: $gray;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  section#content {
+    width: 100%;
+    height: auto;
+    .call-to-action {
+      background-color: darken($lightGray, 3%);
+      border-radius: 5px;
+      margin-bottom: 50px;
+      .fa {
+        color: $teal;
+        font-size: 60px;
+        padding: 20px;
+      }
+      a.btn {
+        margin-top: 25px;
+        padding: 15px 40px;
+      }
+    }
+    .columns {
+      margin-top: 50px;
+      > div {
+        border-radius: 5px;
+        .box-content {
+          padding: 20px;
+          background-color: lighten($lightGray, 3%);
+          text-align: center;
+          .fa {
+            font-size: 40px;
+            color: $gold;
+          }
+          p {
+            font-size: 14px;
+            line-height: 24px;
+
+            margin: 20px 0;
+          }
+          a.btn {
+            background-color: $teal;
+            font-size: 16px;
+            text-transform: none;
+            padding: 15px 40px;
+            &:hover {
+              background-color: darken($teal, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: $navy;
+    color: $white;
+    .navbar-brand {
+      width: 100%;
+      span {
+        color: $white;
+      }
+    }
+    h2, p, a {
+      color: $white;
+    }
+    .contact {
+      margin: 70px 0;
+      span {
+        font-style: italic;
+        font-size: 20px;
+        margin-left: 10px;
+      }
+    }
+    .footer-links {
+      h2 {
+        margin-top: 50px;
+      }
+      ul.list {
+        margin: 20px 0 20px 0;
+        padding: 0;
+        li {
+          list-style: none;
+          line-height: 2em;
+          a {
+            color: $lightGray;
+          }
+        }
+      }
+    }
+    .sub-footer {
+      background-color: darken($navy, 3%);
+      .copyright {
+        text-align: left;
+        p {
+          margin-top: 17px;
+        }
+      }
+      .social {
+         ul {
+          margin: 0;
+          padding: 0;
+          float: right;
+          margin-top: 10px;
+          li {
+            list-style: none;
+            a {
+              font-size: 22px;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

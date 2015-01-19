@@ -5,11 +5,19 @@ body {
   font-size: 16px;
 }
 
-@mixin serif {
+@mixin finance-serif {
   font-family: 'Palatino', 'Times New Roman', 'Georgia', serif;
 }
 
-@mixin sans {
+@mixin finance-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin health-serif {
+  font-family: 'Palatino', 'Times New Roman', 'Georgia', serif;
+}
+
+@mixin health-sans {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -20,15 +28,15 @@ body {
 body.finance {
 
   h1, h2, h3 {
-    @include sans;
+    @include finance-sans;
   }
 
   a {
-    @include sans;
+    @include finance-sans;
   }
 
   a.navbar-brand {
-    @include serif;
+    @include finance-serif;
     font-size: 30px;
     color: $white;
     margin-top: 30px;
@@ -55,7 +63,7 @@ body.finance {
 
   p {
     color: $medGray;
-    @include sans;
+    @include finance-sans;
     font-weight: 400;
     font-size: 12px;
   }
@@ -77,5 +85,69 @@ body.finance {
     font-size: 18px;
     text-align: center;
   }
+
+}
+
+body.health {
+
+  h1, h2, h3 {
+    @include finance-sans;
+  }
+
+  a {
+    @include finance-sans;
+  }
+
+  a.navbar-brand {
+    @include finance-serif;
+    font-size: 30px;
+    color: $white;
+    margin-top: 30px;
+    display: block;
+    font-weight: 700;
+    span {
+      font-style: italic;
+      color: $navy;
+    }
+  }
+
+  a.btn {
+    background-color: $gold;
+    border: none;
+    color: $white;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover {
+      background-color: darken($gold, 5%);
+    }
+  }
+
+  p {
+    color: $medGray;
+    @include finance-sans;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: $medGray;
+    font-weight: 600;
+  }
+
+  h2 {
+    color: $black;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  h4 {
+    color: $darkGray;
+    font-size: 18px;
+    text-align: center;
+  }
+
 
 }
