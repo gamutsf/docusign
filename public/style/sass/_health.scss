@@ -130,8 +130,8 @@ body.health {
         border-radius: 5px;
         .box-content {
           padding: 20px;
-          background-color: lighten($lightGray, 3%);
           text-align: center;
+          border-radius: 5px;
           p {
             font-size: 14px;
             line-height: 24px;
@@ -148,6 +148,24 @@ body.health {
             }
           }
         }
+      }
+    }
+    .vaccine {
+      .box-content {
+        background: url('../img/health/shot.jpg') no-repeat center center;
+        background-size: cover;
+      }
+    }
+    .medicare {
+      .box-content {
+        background: url('../img/health/man.jpg') no-repeat center center;
+        background-size: cover;
+      }
+    }
+    .why {
+      .box-content {
+        background: url('../img/health/woman.jpg') no-repeat center center;
+        background-size: cover;
       }
     }
   }
