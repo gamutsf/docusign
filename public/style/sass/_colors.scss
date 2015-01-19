@@ -56,11 +56,15 @@ $brown: #999999;
 
 // Insurance Colors //
 
-$yellow: #fee233;
+$yellow: #ffc500;
 .yellow { color: $yellow; }
 .bg-yellow { background-color: $yellow; }
 
-$darkYellow: #ffc52e;
+$lightYellow: #fee300;
+.lightYellow { color: $lightYellow; }
+.bg-lightYellow { background-color: $lightYellow; }
+
+$darkYellow: #d9a800;
 .darkYellow { color: $darkYellow; }
 .bg-darkYellow { background-color: $darkYellow; }
 
@@ -72,6 +76,6 @@ $lightBlue: #5a8ca0;
 .lightBlue { color: $lightBlue; }
 .bg-lightBlue { background-color: $lightBlue; }
 
-$darkBlue: #5a8ca0;
+$darkBlue: #294759;
 .darkBlue { color: $darkBlue; }
 .bg-darkBlue { background-color: $darkBlue; }
