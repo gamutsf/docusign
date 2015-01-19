@@ -1,7 +1,12 @@
 body.finance {
+
   header {
     width: 100%;
     height: 100px;
-    background-color: $gold;
+    background: url('../img/topbg.png');
+    .navbar-brand {
+
+    }
   }
+
 }

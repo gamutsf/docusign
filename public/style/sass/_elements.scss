@@ -1,0 +1,14 @@
+
+// Full-Width Bootstrap Dropdowns
+
+.dropdown {
+  position: static !important;
+}
+
+.dropdown-menu {
+  width: 100%;
+  min-width: 0;
+  left: 0;
+  right: 0;
+  background-color: $darkGray;
+}
