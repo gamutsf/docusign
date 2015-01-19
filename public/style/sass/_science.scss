@@ -44,7 +44,6 @@ body.science {
           color: $black;
         }
         .links {
-          border-right: 1px solid darken($gray, 15%);
           ul {
             margin: 0;
             padding: 0;
@@ -60,6 +59,8 @@ body.science {
           }
         }
         .soft-action {
+          border-left: 2px solid lighten($gray, 25%);
+          padding-left: 25px;
           a.btn {
             background-color: $green;
             text-transform: none;
@@ -132,6 +133,7 @@ body.science {
           padding: 20px;
           text-align: center;
           border-radius: 5px;
+          min-height: 350px;
           h2 {
             margin-top: 100px;
           }
@@ -181,6 +183,9 @@ body.science {
       span {
         color: $white;
       }
+    }
+    p {
+      line-height: 2em;
     }
     h2, p, a {
       color: $white;

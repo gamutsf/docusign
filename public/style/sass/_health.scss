@@ -60,6 +60,7 @@ body.health {
         }
         .soft-action {
           border-left: 1px solid lighten($gray, 15%);
+          padding-left: 25px;
           a.btn {
             background-color: $green;
             text-transform: none;
@@ -179,6 +180,9 @@ body.health {
       span {
         color: $white;
       }
+    }
+    p {
+      line-height: 2em;
     }
     h2, p, a {
       color: $white;

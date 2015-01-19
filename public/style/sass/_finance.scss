@@ -45,7 +45,6 @@ body.finance {
           color: $white;
         }
         .links {
-          border-right: 1px solid darken($gray, 15%);
           ul {
             margin: 0;
             padding: 0;
@@ -62,6 +61,8 @@ body.finance {
           }
         }
         .soft-action {
+          border-left: 1px solid darken($gray, 15%);
+          padding-left: 25px;
           a.btn {
             background-color: $gold;
             text-transform: none;
