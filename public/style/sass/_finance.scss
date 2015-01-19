@@ -5,6 +5,13 @@ body.finance {
     height: 100px;
     background: url('../img/finance/topbg.png');
 
+    .navbar-mini {
+      a {
+        color: $medGray;
+        font-weight: 600;
+      }
+    }
+
     ul.navbar-nav {
       margin-top: 30px;
       li {
