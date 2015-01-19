@@ -121,7 +121,7 @@ body.health {
     text-transform: uppercase;
     @include box-shadow (0px 3px 0px 0px rgba(89, 136, 153, 1));
     &:hover {
-      background-color: darken($blue, 5%);
+      background-color: darken($green, 5%);
       @include box-shadow (0px 3px 0px 0px rgba(51, 77, 87, 1));
     }
   }

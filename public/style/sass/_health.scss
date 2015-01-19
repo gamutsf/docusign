@@ -41,7 +41,7 @@ body.health {
         border: none;
         @include box-shadow (none);
         p {
-          color: $white;
+          color: $black;
         }
         .links {
           border-right: 1px solid darken($gray, 15%);
@@ -54,15 +54,17 @@ body.health {
               a {
                 text-transform: none;
                 font-size: 18px;
-                color: $blue;
+                color: $black;
               }
             }
           }
         }
         .soft-action {
           a.btn {
-            background-color: $blue;
+            background-color: $green;
             text-transform: none;
+            padding-bottom: 15px;
+            color: $white;
           }
           p {
             margin: 20px 0;
