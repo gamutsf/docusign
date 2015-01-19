@@ -44,7 +44,7 @@ body {
 
 // Finance Typography //
 body.finance {
-  h1, h2, h3 {
+  h1, h2, h3, h4, h5 {
     @include finance-sans;
   }
 
@@ -95,13 +95,18 @@ body.finance {
   h2 {
     color: $black;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   h4 {
     color: $darkGray;
     font-size: 18px;
     text-align: center;
+  }
+  h5 {
+    font-size: 16px;
+    color: $white;
+    font-weight: 700;
   }
 }
 
