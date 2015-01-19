@@ -44,7 +44,6 @@ body.health {
           color: $black;
         }
         .links {
-          border-right: 1px solid darken($gray, 15%);
           ul {
             margin: 0;
             padding: 0;
@@ -60,6 +59,7 @@ body.health {
           }
         }
         .soft-action {
+          border-left: 1px solid lighten($gray, 15%);
           a.btn {
             background-color: $green;
             text-transform: none;
@@ -132,6 +132,7 @@ body.health {
           padding: 20px;
           text-align: center;
           border-radius: 5px;
+          min-height: 250px;
           p {
             font-size: 14px;
             line-height: 24px;

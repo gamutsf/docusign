@@ -180,6 +180,11 @@ body.health {
     text-align: left;
     line-height: 1.2em;
   }
+  h5 {
+    font-size: 16px;
+    color: $white;
+    font-weight: 700;
+  }
 }
 
 // Science Typography //
@@ -251,6 +256,11 @@ body.science {
     font-size: 50px;
     text-align: left;
     line-height: 1.2em;
+  }
+  h5 {
+    font-size: 16px;
+    color: $white;
+    font-weight: 700;
   }
 }
 
@@ -325,5 +335,10 @@ body.insurance {
     font-size: 57px;
     text-align: left;
     line-height: 1.2em;
+  }
+  h5 {
+    font-size: 16px;
+    color: $white;
+    font-weight: 700;
   }
 }
