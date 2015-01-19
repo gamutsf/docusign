@@ -280,6 +280,9 @@ body.finance {
       .checkbox:first-child {
         margin-top: 40px;
       }
+      hr {
+        border-top-color: lighten($gray, 25%);
+      }
     }
 
     .formz-horizontal {
