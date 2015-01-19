@@ -1,0 +1,238 @@
+body.science {
+  background-color: $lightGray;
+  header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(136, 200, 165, 0.8);
+
+    .navbar-mini {
+      a {
+        color: $white;
+        font-weight: 600;
+      }
+    }
+
+    ul.navbar-nav {
+      margin-top: 30px;
+      li {
+        a {
+          color: $darkGreen;
+          font-size: 18px;
+          @include health-sans;
+          font-weight: 700;
+          text-transform: none;
+          &:hover {
+            background: none;
+          }
+        }
+        &.open {
+          a {
+            background: $white;
+            border-radius: 5px;
+            padding-bottom: 39px;
+          }
+        }
+      }
+      // Dropdown Mega Menu //
+      ul.dropdown-menu {
+        background: $white;
+        padding: 25px;
+        margin: -5px 0 0 0;
+        border: none;
+        @include box-shadow (none);
+        p {
+          color: $black;
+        }
+        .links {
+          border-right: 1px solid darken($gray, 15%);
+          ul {
+            margin: 0;
+            padding: 0;
+            li {
+              list-style: none;
+              line-height: 3em;
+              a {
+                text-transform: none;
+                font-size: 18px;
+                color: $black;
+              }
+            }
+          }
+        }
+        .soft-action {
+          a.btn {
+            background-color: $green;
+            text-transform: none;
+            padding-bottom: 15px;
+            color: $white;
+            @include box-shadow (0px 3px 0px 0px $darkGreen);
+          }
+          p {
+            margin: 20px 0;
+            font-size: 15px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  section#masthead {
+    background: url('../img/health-science/science-masthead.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 720px;
+    margin: 0;
+    .callout {
+      max-width: 600px;
+      height: auto;
+      border-radius: 5px;
+      position: absolute;
+      z-index: 10;
+      margin-top: 100px;
+      padding: 20px 50px;
+      margin-left: 1px;
+      a.huge-btn {
+        background-color: $green;
+        @include box-shadow (0px 3px 0px 0px rgba(88, 140, 126, 1));
+        &:hover {
+          background-color: darken($green, 5%);
+          @include box-shadow (0px 3px 0px 0px rgba(57, 88, 80, 1));
+        }
+      }
+    }
+  }
+
+  section#content {
+    width: 100%;
+    height: auto;
+    .call-to-action {
+      background-color: darken($lightGray, 3%);
+      border-radius: 5px;
+      margin-bottom: 50px;
+      .fa {
+        color: $green;
+        font-size: 60px;
+        padding: 20px;
+      }
+      a.btn {
+        margin-top: 25px;
+        padding: 15px 40px;
+        &:hover {
+          background-color: darken($blue, 10%);
+          @include box-shadow (0px 3px 0px 0px rgba(51, 77, 87, 1));
+        }
+      }
+    }
+    .columns {
+      margin-top: 50px;
+      > div {
+        border-radius: 5px;
+        .box-content {
+          padding: 20px;
+          text-align: center;
+          border-radius: 5px;
+          h2 {
+            margin-top: 100px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 24px;
+            margin: 20px 0;
+            color: $black;
+          }
+          a.btn {
+            background-color: $blue;
+            font-size: 16px;
+            text-transform: none;
+            padding: 15px 40px;
+            &:hover {
+              background-color: darken($blue, 10%);
+            }
+          }
+        }
+      }
+    }
+    .vaccine {
+      .box-content {
+        background: url('../img/health-science/shot.jpg') no-repeat center center;
+        background-size: cover;
+      }
+    }
+    .medicare {
+      .box-content {
+        background: url('../img/health-science/man.jpg') no-repeat center center;
+        background-size: cover;
+      }
+    }
+    .why {
+      .box-content {
+        background: url('../img/health-science/woman.jpg') no-repeat center center;
+        background-size: cover;
+      }
+    }
+  }
+
+  footer {
+    background-color: $brown;
+    color: $white;
+    .navbar-brand {
+      width: 100%;
+      span {
+        color: $white;
+      }
+    }
+    h2, p, a {
+      color: $white;
+    }
+    .contact {
+      margin: 70px 0;
+      span {
+        font-style: italic;
+        font-size: 20px;
+        margin-left: 10px;
+      }
+    }
+    .footer-links {
+      h2 {
+        margin-top: 50px;
+      }
+      ul.list {
+        margin: 20px 0 20px 0;
+        padding: 0;
+        li {
+          list-style: none;
+          line-height: 2em;
+          a {
+            color: $lightGray;
+          }
+        }
+      }
+    }
+    .sub-footer {
+      background-color: darken($brown, 5%);
+      .copyright {
+        text-align: left;
+        p {
+          margin-top: 17px;
+        }
+      }
+      .social {
+         ul {
+          margin: 0;
+          padding: 0;
+          float: right;
+          margin-top: 10px;
+          li {
+            list-style: none;
+            a {
+              font-size: 22px;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

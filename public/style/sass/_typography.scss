@@ -21,6 +21,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+@mixin science-serif {
+  font-family: 'Palatino', 'Times New Roman', 'Georgia', serif;
+}
+
+@mixin science-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
 @mixin fa {
   font-family: FontAwesome;
 }
@@ -152,7 +160,79 @@ body.health {
 
   h4 {
     color: $darkGray;
-    font-size: 62px;
+    font-size: 58px;
     text-align: left;
+    line-height: 1.2em;
+  }
+}
+
+// Science Typography //
+body.science {
+  h1, h2, h3, h4 {
+    @include science-sans;
+  }
+
+  a {
+    @include science-sans;
+  }
+
+  a.navbar-brand {
+    @include science-sans;
+    font-size: 30px;
+    color: $white;
+    margin-top: 30px;
+    display: block;
+    margin-right: 80px;
+    font-weight: 400;
+    span {
+      color: $darkGreen;
+      font-weight: 700;
+    }
+  }
+
+  a.btn {
+    background-color: $blue;
+    border: none;
+    color: $white;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include box-shadow (0px 3px 0px 0px rgba(89, 136, 153, 1));
+    &:hover {
+      background-color: darken($green, 5%);
+      @include box-shadow (0px 3px 0px 0px $darkGreen);
+    }
+  }
+
+  p {
+    color: $medGray;
+    @include science-sans;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: $medGray;
+    font-weight: 600;
+  }
+
+  h2 {
+    color: $black;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  h3 {
+    color: $green;
+    font-weight: 700;
+  }
+
+  h4 {
+    color: $darkGray;
+    font-size: 50px;
+    text-align: left;
+    line-height: 1.2em;
   }
 }
