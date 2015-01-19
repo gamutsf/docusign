@@ -103,10 +103,11 @@ body.health {
     color: $white;
     margin-top: 30px;
     display: block;
-    font-weight: 700;
     margin-right: 80px;
+    font-weight: 400;
     span {
       color: $darkGreen;
+      font-weight: 700;
     }
   }
 
@@ -142,6 +143,11 @@ body.health {
     color: $black;
     font-weight: 700;
     font-size: 18px;
+  }
+
+  h3 {
+    color: $green;
+    font-weight: 700;
   }
 
   h4 {

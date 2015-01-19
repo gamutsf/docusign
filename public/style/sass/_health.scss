@@ -40,10 +40,6 @@ body.health {
         margin: -5px 0 0 0;
         border: none;
         @include box-shadow (none);
-        h3 {
-          font-size: 22px;
-          color: $white;
-        }
         p {
           color: $white;
         }
