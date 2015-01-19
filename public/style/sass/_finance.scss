@@ -9,6 +9,7 @@ body.finance {
       font-size: 30px;
       color: $white;
       margin-top: 30px;
+      display: block;
       span {
         font-style: italic;
         color: $navy;
@@ -34,11 +35,15 @@ body.finance {
           }
         }
       }
+      // Dropdown Mega Menu //
       ul.dropdown-menu {
         background: $darkGray;
         margin-top: 19px;
         h3 {
           color: $white;
+        }
+        p {
+          color: $white
         }
       }
     }
@@ -97,8 +102,21 @@ body.finance {
   footer {
     background-color: $navy;
     color: $white;
+    .navbar-brand {
+      width: 100%;
+    }
     h2, p, a {
       color: $white;
+    }
+    ul.links-list {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        a {
+          color: $lightGray;
+        }
+      }
     }
     .sub-footer {
       background-color: darken($navy, 3%);
