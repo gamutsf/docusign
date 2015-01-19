@@ -259,6 +259,7 @@ body.finance {
         label {
           float: left;
           width: 100%;
+          color: lighten($gray, 8%);
         }
       }
       .btn {
@@ -277,11 +278,24 @@ body.finance {
           margin-right: 295px;
         }
       }
-      .checkbox:first-child {
-        margin-top: 40px;
+      .checkbox {
+        &.first {
+          margin-top: 40px;
+        }
+        input {
+          width: auto;
+        }
       }
       hr {
         border-top-color: lighten($gray, 25%);
+      }
+      input {
+        width: 250px;
+      }
+      .phones {
+        input {
+          width: 80px;
+        }
       }
     }
 
