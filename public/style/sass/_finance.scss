@@ -1,11 +1,45 @@
 body.finance {
-
+  background-color: $lightGray;
   header {
     width: 100%;
     height: 100px;
     background: url('../img/finance/topbg.png');
     .navbar-brand {
+      @include serif;
+      font-size: 30px;
+      color: $white;
+      margin-top: 30px;
+      span {
+        font-style: italic;
+        color: $navy;
+      }
+    }
 
+    ul.navbar-nav {
+      li {
+        a {
+          color: $white;
+          font-size: 18px;
+          @include sans;
+          font-weight: 700;
+          text-transform: uppercase;
+          &:hover {
+            background: none;
+          }
+        }
+        &.open {
+          a {
+            background: none;
+          }
+        }
+      }
+      ul.dropdown-menu {
+        background: $darkGray;
+        margin-top: 19px;
+        h3 {
+          color: $white;
+        }
+      }
     }
   }
 
@@ -20,6 +54,61 @@ body.finance {
   section#content {
     width: 100%;
     height: auto;
+    .call-to-action {
+      background-color: darken($lightGray, 3%);
+      border-radius: 5px;
+      .fa {
+        color: $teal;
+        font-size: 60px;
+        padding: 20px;
+      }
+      a.btn {
+        background-color: $gold;
+        color: $white;
+      }
+    }
+    .columns {
+      margin-top: 50px;
+      > div {
+        border-radius: 5px;
+        .box-content {
+          padding: 20px;
+          background-color: lighten($lightGray, 3%);
+          text-align: center;
+          .fa {
+            font-size: 40px;
+            color: $gold;
+          }
+          p {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+      .college {
+        .box-content {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: $navy;
+    color: $white;
+    h2, p, a {
+      color: $white;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+      }
+    }
+    .sub-footer {
+      background-color: darken($navy, 3%);
+    }
   }
 
 }

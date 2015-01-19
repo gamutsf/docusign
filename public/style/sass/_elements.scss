@@ -1,6 +1,5 @@
 .navbar-mini {
   ul {
-    display: inline-block;
     float: right;
     li {
       float: left;
@@ -22,7 +21,6 @@
   min-width: 0;
   left: 0;
   right: 0;
-  background-color: $darkGray;
 }
 
 // Structure Styles
