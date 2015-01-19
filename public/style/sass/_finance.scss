@@ -16,6 +16,7 @@ body.finance {
     }
 
     ul.navbar-nav {
+      margin-top: 30px;
       li {
         a {
           color: $white;
@@ -99,15 +100,21 @@ body.finance {
     h2, p, a {
       color: $white;
     }
-    ul {
-      margin: 0;
-      padding: 0;
-      li {
-        list-style: none;
-      }
-    }
     .sub-footer {
       background-color: darken($navy, 3%);
+      .copyright {
+        text-align: left;
+      }
+      .social {
+         ul {
+          margin: 0;
+          padding: 0;
+          float: right;
+          li {
+            list-style: none;
+          }
+        }
+      }
     }
   }
 
