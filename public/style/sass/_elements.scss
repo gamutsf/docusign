@@ -182,7 +182,6 @@ textarea {
     }
     input {
       width: auto;
-      background-color: darken($white, 25%) !important;
     }
   }
   hr {
@@ -200,7 +199,7 @@ textarea {
 
 .formz-horizontal {
   h2 {
-    color: $black;
+    color: $black !important;
   }
   .form-group {
     margin-top: 20px;
@@ -219,7 +218,6 @@ textarea {
   }
   input {
     width: 240px !important;
-    background-color: darken($white, 25%) !important;
   }
   button[type="submit"] {
     color: $white;
