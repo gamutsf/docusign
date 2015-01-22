@@ -148,12 +148,15 @@ textarea {
 }
 
 .formz-vertical {
+  h2 {
+    color: $black;
+  }
   .form-group {
     margin-top: 20px;
     label {
       float: left;
       width: 100%;
-      color: lighten($gray, 8%);
+      color: darken($gray, 10%);
     }
   }
   .btn {
@@ -179,6 +182,7 @@ textarea {
     }
     input {
       width: auto;
+      background-color: darken($white, 25%) !important;
     }
   }
   hr {
@@ -195,12 +199,15 @@ textarea {
 }
 
 .formz-horizontal {
+  h2 {
+    color: $black;
+  }
   .form-group {
     margin-top: 20px;
     label {
       float: left;
       width: 100%;
-      color: lighten($gray, 8%);
+      color: darken($gray, 10%);
     }
   }
   .btn {
@@ -211,7 +218,8 @@ textarea {
     text-transform: none;
   }
   input {
-    width: 240px;
+    width: 240px !important;
+    background-color: darken($white, 25%) !important;
   }
   button[type="submit"] {
     color: $white;
